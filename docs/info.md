@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Our ASIC can work as standalone device or can be integrated with a processor. the processor multiplexes the data 
 
 ## How to test
 
