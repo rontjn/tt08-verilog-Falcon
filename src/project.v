@@ -25,6 +25,8 @@ control_unit control_unit(
     .comparison_result(uo_out[5]), // Final comparison result
 );
  
-  
+wire _unused = &{ena, 1'b0};  
 
+assign ui_in[5:0] = 0;
+assign uo_out[4:0] = 0;
 endmodule
