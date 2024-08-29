@@ -15,6 +15,10 @@ module tt_um_Falcon (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
+ 
+wire _unused = &{ena, 1'b0};  
+assign uo_out[4:0] = 0;
+    
 control_unit control_unit(
     .clk(clk),
     .reset(rst_n),
@@ -24,9 +28,4 @@ control_unit control_unit(
     .sck(uo_out[6]),             // SPI clock
     .comparison_result(uo_out[5]), // Final comparison result
 );
- 
-wire _unused = &{ena, 1'b0};  
-
-assign ui_in[5:0] = 0;
-assign uo_out[4:0] = 0;
 endmodule
