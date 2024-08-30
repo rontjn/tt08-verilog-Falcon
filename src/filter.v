@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+//`timescale 1ns / 1ps
 module filter#(  
     parameter DATA_WIDTH = 16, // Width of the input and output data
     parameter COEFF_WIDTH = 16, // Width of the filter coefficients
