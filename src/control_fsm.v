@@ -25,7 +25,7 @@ module control_fsm(
     input filter_done,
     input compare_done,
     output reg filter_enable,
-    output reg compare_enable,
+    output reg compare_enable
 );
 
     // State encoding
