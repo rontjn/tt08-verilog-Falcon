@@ -13,6 +13,8 @@ module tt_um_Falcon (
  
 wire _unused = &{ena, 1'b0};  
 assign uo_out[4:0] = 5'b00000;
+assign uio_out = 0;
+assign uio_oe = 0;
     
 control_unit control_unit(
     .clk(clk),
