@@ -26,7 +26,6 @@ module control_fsm(
     input compare_done,
     output reg filter_enable,
     output reg compare_enable,
-	 output reg start_conversion
 );
 
     // State encoding
@@ -45,7 +44,6 @@ module control_fsm(
             compare_state <= IDLE;
             filter_enable <= 0;
             compare_enable <= 0;
-				start_conversion<=0;
         end else begin
 		      
             // Handle filter state
@@ -55,7 +53,7 @@ module control_fsm(
                     filter_enable <= 1;
                 end
                 ACTIVE: if (filter_done) 
-					     filter_state <= DONE;
+		filter_state <= DONE;
 						  
 					 
                 DONE: filter_state <= IDLE;
